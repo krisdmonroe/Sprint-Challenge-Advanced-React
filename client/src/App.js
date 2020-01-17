@@ -7,7 +7,7 @@ import PlayerList from './components/PlayerList'
 
 const App =()=>{
   const [darkMode, setDarkMode] = useDarkMode(false);
-  
+
   const toggleMode = e => {
     e.preventDefault();
     setDarkMode(!darkMode);
@@ -23,6 +23,7 @@ const App =()=>{
           className={darkMode ? 'toggle toggled' : 'toggle'}
         />
       </div>
+      <h1>Player List</h1>
     <PlayerList />
     </div>
   );

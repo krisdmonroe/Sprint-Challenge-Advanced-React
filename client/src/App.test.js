@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import PlayerList from '../src/components/PlayerList'
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
@@ -9,14 +10,14 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-test("Does Name show on screen", ()=> {
+test("Does player show on screen", ()=> {
   const { getAllByText }  = render(<App />);
 
-  getAllByText(/name/i);
+  getAllByText(/player/i);
 })
 
-test("Does from show on screen", ()=> {
-  const { getAllByText }  = render(<App />);
+test("Does list show on screen", ()=> {
+  const { getAllByText }  = render(<App/>);
   
-  getAllByText(/from/i);
+  getAllByText(/list/i);
 })
