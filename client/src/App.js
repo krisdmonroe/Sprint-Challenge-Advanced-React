@@ -24,7 +24,9 @@ const App =()=>{
         />
       </div>
       <h1>Player List</h1>
+      <div>
     <PlayerList />
+      </div>
     </div>
   );
 }
